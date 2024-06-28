@@ -1,0 +1,1040 @@
+@font-face {
+    font-family: "brainspace";
+    src: url(archia-regular-webfont.woff);
+}
+
+@font-face {
+    font-family: "montreal";
+    src: url(PPNeueMontreal-Light.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: brainspace;
+}
+
+body {
+    cursor: none;
+}
+
+.cursor {
+    height: 1vw;
+    width: 1vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+    mix-blend-mode: difference;
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    mix-blend-mode: difference;
+}
+
+.navbarlogo {
+    height: 5vw;
+    width: 20vw;
+    padding-left: 8vw;
+}
+
+.navc {
+    width: 55vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5vw
+}
+
+nav h4 {
+    color: white;
+    font-size: 0.8vw;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+nav i {
+    font-size: 2vw;
+    color: white;
+    display: none;
+}
+
+.nav-h4 {
+    padding: 0.5vw;
+}
+
+.page1 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.page1-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.page2 {
+    /* height: 110vh; */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.page2-h5 {
+    font-size: 21.6px;
+    font-weight: 300;
+    /* word-spacing: 0.6vw; */
+    letter-spacing: 5.184px;
+    text-wrap: nowrap;
+    padding: 0 35vw;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+
+.page2-content {
+    height: 45vh;
+    width: 90vw;
+    margin-bottom: 20vh;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page2-c-left {
+    height: 45vh;
+    width: 35vw;
+    position: relative;
+    overflow-x: hidden;
+    border-radius: 20px;
+    background-color: rgb(248, 248, 248);
+}
+
+.page2-c-left-image {
+    /* overflow-x:hidden; */
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    mix-blend-mode: multiply;
+}
+
+.page2-c-left-blur {
+    height: 45vh;
+    width: 17.5vw;
+    position: absolute;
+    filter: blur(50%);
+    background-color: rgba(255, 255, 255, 0.243);
+    z-index: 2;
+    backdrop-filter: blur(20px);
+}
+
+.page2-c-right {
+    height: 45vh;
+    width: 45vw;
+    /* background-color: blue; */
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.page2-c-right-heading {
+    font-size: 49.5px;
+    font-weight: 50;
+    letter-spacing: 0.99px;
+    /* margin-bottom: 21px; */
+}
+
+.page2-c-right-p {
+    font-size: 22.5px;
+    letter-spacing: 0.45px;
+    word-spacing: 0px;
+    font-stretch: 100%;
+    font-weight: 200;
+    vertical-align: baseline;
+    font-family: montreal;
+}
+
+.page2-c-right-button {
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding: 15.36px;
+    letter-spacing: normal;
+    word-spacing: 0;
+    border-radius: 25px;
+    /* padding: 0 21px; */
+}
+
+.page2-content2 {
+    height: 55vh;
+    width: 90vw;
+    margin-bottom: 20vh;
+    /* background-color: violet; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.page2-c2-left {
+    height: 55vh;
+    width: 45vw;
+    /* background-color: blue; */
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.page2-c2-left-heading {
+    font-size: 49.5px;
+    font-weight: 50;
+    letter-spacing: 0.99px;
+}
+
+.page2-c2-left-p {
+    font-size: 22.5px;
+    letter-spacing: 0.45px;
+    word-spacing: 0px;
+    font-stretch: 100%;
+    font-weight: 200;
+    vertical-align: baseline;
+    font-family: montreal;
+}
+
+.page2-c2-left-p-span {
+    font-weight: 900;
+}
+
+.page2-c2-left-button {
+    font-size: 14px;
+    font-family: sans-serif;
+    padding: 1vw;
+    border-radius: 25px;
+}
+
+.page2-c2-right {
+    height: 45vh;
+    width: 35vw;
+    /* background-color: blue; */
+}
+
+.page2-c2-right-video {
+    height: 45vh;
+    width: 35vw;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+}
+
+.page3 {
+    height: max-content;
+    width: 100vw;
+    position: relative;
+    background-image: url(p3baimpng.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page3 h5 {
+    font-size: 21.6px;
+    font-weight: 300;
+    /* word-spacing: 0.6vw; */
+    letter-spacing: 5.184px;
+    text-wrap: nowrap;
+    padding: 0 35vw;
+    margin-bottom: 10vh;
+    margin-top: 8vh;
+    position: absolute;
+}
+
+.p3helmetbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15vh;
+    /* background-color: rgb(255, 0, 0); */
+}
+
+.helmet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    width: 55vw;
+    height: 55vw;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    background-image: url(/page3helmet.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.helmetcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+    height: 40vh;
+}
+
+.helmetcontent h2 {
+    width: 37vw;
+    font-size: 49.5px;
+    font-weight: 50;
+    letter-spacing: 0.99px;
+    text-align: center;
+}
+
+.helmetcontent p {
+    font-size: 22.5px;
+    letter-spacing: 0.45px;
+    word-spacing: 0px;
+    font-stretch: 100%;
+    font-weight: 200;
+    vertical-align: baseline;
+    font-family: montreal;
+    width: 45vw;
+    text-align: center;
+}
+
+.helmetcontent button {
+    font-size: 18px;
+    font-family: montreal, sans-serif;
+    padding: 10px 25px;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.page3content1 {
+    height: 40vh;
+    width: 85%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    margin-bottom: 10vw;
+    position: relative;
+}
+
+.page3content1left h6 {
+    font-size: 27px;
+    line-height: 35.1px;
+    vertical-align: baseline;
+    letter-spacing: 0.54px;
+    word-spacing: 0px;
+    font-weight: 300;
+    width: 42vw;
+}
+
+.page3content1left h6 span {
+    font-weight: 900;
+}
+
+.page3content1right video {
+    width: 35vw;
+    border-radius: 20px;
+}
+
+.page3content2 {
+    height: 40vh;
+    width: 85%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    margin-bottom: 10vw;
+    position: relative;
+}
+
+.page3content2right h6 {
+    font-size: 27px;
+    line-height: 35.1px;
+    vertical-align: baseline;
+    letter-spacing: 0.54px;
+    word-spacing: 0px;
+    font-weight: 300;
+    width: 42vw;
+    margin-bottom: 4vw;
+}
+
+.page3content2right button {
+    font-size: 18px;
+    font-family: montreal, sans-serif;
+    padding: 10px 25px;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.page3content2left video {
+    width: 35vw;
+    border-radius: 20px;
+}
+
+.page3content3 {
+    height: 40vh;
+    width: 85%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    margin-bottom: 10vw;
+    position: relative;
+}
+
+.page3content3left h6 {
+    font-size: 27px;
+    line-height: 35.1px;
+    vertical-align: baseline;
+    letter-spacing: 0.54px;
+    word-spacing: 0px;
+    font-weight: 300;
+    width: 42vw;
+}
+
+.page3content3left h6 span {
+    font-weight: 900;
+}
+
+.page3content3right video {
+    width: 35vw;
+    border-radius: 20px;
+}
+
+.page3content4 {
+    height: 40vh;
+    width: 85%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    margin-bottom: 10vw;
+    position: relative;
+}
+
+.page3content4right h6 {
+    font-size: 27px;
+    line-height: 35.1px;
+    vertical-align: baseline;
+    letter-spacing: 0.54px;
+    word-spacing: 0px;
+    font-weight: 300;
+    width: 42vw;
+    margin-bottom: 4vw;
+}
+
+.page3content4right h6 span{
+    font-weight: 900;
+}
+
+.page3content4right button {
+    font-size: 18px;
+    font-family: montreal, sans-serif;
+    padding: 10px 25px;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.page3content4left video {
+    width: 35vw;
+    border-radius: 20px;
+}
+
+.page4{
+    height: 120vh;
+    width: 100%;
+    padding-top: 20vh;
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.page4 h5{
+    color: white;
+    font-size: 21.6px;
+    font-weight: 300;
+    letter-spacing: 5.184px;
+    text-wrap: nowrap;
+}
+
+.page4content{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+    /* background-color: aqua; */
+    padding: 8vw 5vw;
+    flex-wrap:nowrap ;
+    /* position: absolute; */
+}
+.page4info{
+    color: white;
+    height: 70vh;
+    width: 31vw;
+    position: relative;
+    /* background-color: rgb(255, 255, 255); */
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 5vw;
+}
+.page4info h2{
+    font-size: 49.5px;
+    font-weight: 50;
+    letter-spacing: 0.99px;
+}
+.page4info p{
+    font-size: 22.5px;
+    letter-spacing: 0.45px;
+    word-spacing: 0px;
+    font-stretch: 100%;
+    font-weight: 200;
+    vertical-align: baseline;
+    font-family: montreal;
+}
+.page4info button{
+    color: white;
+    font-size: 1vw;
+    margin-top: 2vw;
+    padding: 1vw 2vw;
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    font-weight: 600;
+    width: 50%;
+}
+.page4-elems{
+    height: 80vh;
+    width: 40vw;
+    margin-right: 2vw;
+    background-color: rgba(255, 255, 255, 0.182);
+    backdrop-filter: blur(20px);
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 50px;
+    mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem-box_bg_mob.svg);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+    mask-position: bottom;
+    -webkit-mask-attachment: "hello";
+    border-radius: 20px;
+    padding-bottom: 7%;
+    z-index: 1;
+    
+}
+.page4-elems h2{
+    font-size: 54px;
+    font-weight: 200;
+    letter-spacing: -1.08px;
+}
+.page4-elems p{
+    font-family: montreal;
+    font-size: 19.8px;
+}
+.page4-elems img{
+    height: 30vh;
+    width: 33vw;
+    border-radius: 20px;
+}
+.page4 .slider{
+    height: 5px;
+    width: 59%;
+    border-radius: 20px;
+    /* position: absolute; */
+    /* left: 50%; */
+    /* bottom: 8%; */
+    background-color: rgb(255, 255, 255);
+    /* transform: translate(-50%,0); */
+    overflow: hidden;
+}
+.page4 .slider-in{
+    height: 100%;
+    width: 17vw;
+    background-color: black;
+}
+
+.page5{
+    height: max-content;
+    width: 100%;
+    /* background-color: aquamarine; */
+    background-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/contact_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.page5overlay{
+    height: max-content;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.545);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.page5overlay h2{
+    font-size: 54px;
+    font-weight: 50;
+    letter-spacing: -1.08px;
+    font-weight: 200;
+    width: 83vw;
+    margin-top: 15vh;
+}
+.p{
+    width: 85vw;
+    height: 40vh;
+    /* background-color: aqua; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.leftp{
+    width: 42vw;
+    font-size: 27px;
+    font-family: brainspace;
+    /* background-color: aquamarine; */
+}
+.rightp{
+    width: 33vw;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.rightpup{
+    font-family: montreal;
+    font-size: 22.5px;
+    letter-spacing: 0.45px;
+    font-weight: 200;
+}
+.rightpdown{
+    width: 30vw;
+    font-family: montreal;
+    font-size: 22.5px;
+    font-weight: 800;
+    margin-top: 4vh;
+}
+hr{
+    border: 0.5px solid black;
+    width: 85vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.page5overlay h5{
+    font-size: 21.6px;
+    font-weight: 300;
+    letter-spacing: 5.184px;
+    text-wrap: nowrap;
+    margin: 2vh;
+}
+.page5cardscontainer{
+    width: 85%;
+    height: 80vh;
+    /* background-color: white; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page5cards{
+    height: 60vh;
+    width: 25vw;
+    background-color: rgb(255, 255, 255);
+    mask-image: url(https://www.brain.space/wp-content/themes/brain.space/assets/bg/home/ecosystem-box_bg_mob.svg);
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position:bottom;
+    border-radius: 20px;
+    rotate: 180deg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.innercard{
+    height: 50vh;
+    width: 20vw;
+    /* background-color: rgb(255, 0, 0); */
+    rotate: 180deg;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.innercard h1{
+    font-size: 31.5px;
+    font-weight: 300;
+    padding: 1vw;
+    width: 15vw;
+    margin-top: 1vw;
+    border-radius: 40px;
+}
+.one h1{
+    background-color: rgb(223, 222, 255);
+}
+.two h1{
+    background-color: rgb(195, 230, 254);
+}
+.three h1{
+    background-color: rgb(255, 216, 206);
+}
+.innercard p{
+    font-size: 18px;
+    font-family: brainspace;
+    margin: 1vw;
+}
+.page5overlay h6{
+    font-size: 22.5px;
+    font-weight: 300;
+    text-align: center;
+    width: 50vw;
+    margin: 5vw;
+}
+
+
+.page6{
+    height: max-content;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+.page6 h5{
+    font-size: 21.6px;
+    font-weight: 300;
+    letter-spacing: 5.184px;
+    text-wrap: nowrap;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+}
+.page6box1{
+    width: 85vw;
+    height: 33vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20vh;
+    /* background-color: aqua; */
+}
+.p6b1left{
+    height: 100%;
+    width: 40%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.p6b1left h3{
+    font-size: 47px;
+    letter-spacing: 0.99px;
+    font-weight: 100;
+}
+.p6b1left p{
+    font-family: montreal;
+    font-size: 22.5px;
+    letter-spacing: 0.45px;
+    
+}
+.p6b1right{
+    height: 100%;
+    width: 50%;
+    padding: 1px;
+    /* background-color: cadetblue; */
+}
+.p6b1right img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+.page6box2{
+    height: 45vh;
+    width: 85vw;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 25vh;
+}
+.p6b2boxes{
+    width: 14vw;
+    height: 20vh;
+    /* background-color: aquamarine; */
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-family: brainspace;
+    font-size: 12.6px;
+    font-weight: 300;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.p6b2boxes img{
+    margin-bottom: 2vh;
+}
+.b1{
+    margin-left: 10vw;
+}
+.b3{
+    margin-right: 10vw;
+}
+.page6box3{
+    height: max-content;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenl;
+    background: conic-gradient(at 0 0,rgb(255, 167, 183),rgb(117, 188, 250),rgb(50, 204, 251),rgb(161, 255, 161),rgb(255, 255, 163),rgb(141, 235, 136),rgb(199, 134, 196),rgb(232, 178, 108),rgb(255, 167, 183));
+    position: relative;
+    /* padding-bottom: 10vh; */
+}
+.page6box3 img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.page6 > img{
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 33%;
+    left: 7%;
+    z-index: 2;
+    transform: scale(1.2);
+}
+.page6box3 h5{
+    font-size: 21.6px;
+    font-weight: 300;
+    letter-spacing: 5.184px;
+    text-wrap: nowrap;
+    margin-top: 20vh;
+}
+.page6box3content{
+    height: 50vh;
+    width: 88%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10vh;
+}
+.p6b3cleft{
+    height: 100%;
+    width: 37%;
+    /* background-color: aquamarine; */
+}
+.p6b3cleft h3{
+    font-size: 47px;
+    letter-spacing: 0.99px;
+    font-weight: 100;
+}
+.p6b3cright{
+    height: 100%;
+    width: 50%;
+    /* background-color: aquamarine; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-wrap: wrap;
+}
+.p6b3cright h5{
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 5vh;
+}
+.p6b3cright p{
+    font-size: 22.5px;
+    font-family: montreal;
+}
+.page6box3in{
+    height: 120vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #c4c4c44f;
+    border-radius: 50px;
+    backdrop-filter: blur(100px);
+}
+.cc{
+    height: 100vh;
+    width: 90%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+.p6b3inc{
+    height: 20%;
+    width: 40%;
+    /* background-color: blueviolet; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+.p6b3inc h4{
+    font-family: brainspace;
+    font-weight: 100;
+    padding: 1vw;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+.p6b3inc p{
+    font-family: montreal;
+    margin-left: 2vw;
+    font-size: 0.8vw;
+    font-weight: 100;
+}
+
+.page6box3in h5{
+    font-size: 27px;
+    font-family: montreal;
+    margin-top: 10vh;
+    letter-spacing: 0px;
+}
+
+.page6box4{
+    height: 80vh;
+    width: 90%;
+    /* background-color: aqua; */
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.p6b4left{
+    height: 80vh;
+    width: 40%;
+    /* background-color: rgb(74, 82, 19); */
+    display: flex;
+    flex-direction: column;
+
+}
+.p6b4left h6{
+    font-size: 47px;
+    letter-spacing: 0.99px;
+    font-weight: 100;
+}
+.p6b4left > p{
+    font-family: montreal;
+    font-size: 22.5px;
+    margin-top: 5vh;
+}
+.p6b4leftbottom{
+    /* background-color: red; */
+    height: 40%;
+    width: 100%;
+    margin-top: 5vh;
+}
+.p6b4leftbottomelems{
+    height: 25%;
+    width: 100%;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.p6b4leftbottomelems p{
+    font-size: 12.6px;
+    font-family: brainspace;
+}
+
+.p6b4right{
+    height: 80vh;
+    width: 45%;
+    background-color: transparent;
+    background-image: url(https://www.brain.space/wp-content/uploads/2023/07/peripheral-sensors.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
